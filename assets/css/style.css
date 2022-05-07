@@ -418,13 +418,13 @@ header {
 
 @media screen and (max-width: 820px) {
   .contenedor {
-    height: 570px;
+    height: 580px;
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 376px) {
   .contenedor {
-    height: 700px;
+    height: 620px;
   }
 }
 

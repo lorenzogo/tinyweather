@@ -1,0 +1,48 @@
+//----ESTILOS INTERCAMBIABLES----
+
+//Atributos
+
+.margen_A 
+    margin: 0.5em
+    @media screen and (max-width: $movil)
+        margin: 0
+
+.radio
+    border-radius: 1em
+    @media screen and (max-width: $movil)
+        border-radius: 0
+
+.oculto
+    display: none
+    
+
+.visible
+    display: flex
+    flex-direction: column
+
+.visible_locations
+    display: flex
+    position: absolute
+    z-index: 1
+    top: 0
+    
+        
+.fondo
+
+
+.derecha
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+
+.opacidad
+    opacity: 1
+    @media screen and (max-width: $tablet)
+        opacity: 0.5
+    @media screen and (max-width: $tablet)
+        opacity: 0.2
+
+//Comprobación
+*
+    // border: 1px solid red

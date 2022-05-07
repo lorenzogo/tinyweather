@@ -1,0 +1,227 @@
+//Estilos tipográficos y relacionados
+
+
+//Rubik
+
+@font-face 
+    font-family: 'Rubik'
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2'), url('../fonts/Rubik-Bold.woff') format('woff')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: 'Rubik'
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'), url('../fonts/Rubik-Regular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+
+//Estilos 
+    
+h1  
+    font-family: Rubik
+    font-weight: normal
+    font-size: 2.25em 
+    line-height: calc(1ex / 0.48)
+    color: $blanco
+    @media screen and (max-width: $tablet)
+        font-size: 2em
+
+
+h2
+    font-family: Rubik
+    font-weight: normal
+    line-height: calc(1ex / 0.48)
+    color: $blanco
+
+
+.bold
+    font-weight: bold
+
+
+//Datos
+
+#city
+    font-size: 2.2em
+    @media screen and (max-width: $tablet)
+        font-size: 1.8em
+    @media screen and (max-width: $movil)
+        font-size: 1.7em
+        padding-top: 0.1em
+
+
+#date
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1.3em
+    padding: 0.5em
+    @media screen and (max-width: $tablet)
+        font-size: 1.1em
+
+
+#estado_clima
+    font-family: Rubik
+    font-weight: bold
+    font-size: 2.5em
+    text-align: center
+    @media screen and (max-width: $tablet)
+        font-size: 2em
+
+
+#degrees
+    font-family: Rubik
+    font-weight: bold
+    font-size: 2em
+    width: 30%
+    @media screen and (max-width: $tablet)
+        font-size: 1.4em
+    @media screen and (max-width: $movil)
+        font-size: 1.2em
+
+
+.nombre_actividad
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1.1em
+    line-height: 1.1em
+    align-self: center
+    padding-left: 1em
+    @media screen and (max-width: $tablet)
+        font-size: 1em
+
+    
+
+.inferior_derecha
+     width: 30%
+     display: flex
+     justify-content: end
+     @media screen and (max-width: $movil)
+         width: 10%
+     
+
+#datosOcultos
+   
+    position: absolute
+    right: 0
+    bottom: 60px
+    margin-bottom: 1em
+    padding-right: 2em
+    text-align: right
+    @media screen and (max-width: $movil)
+        margin-bottom: 1.2em
+        bottom: 80px
+    
+.otros_datos
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1em
+    color: $negro
+    background-color: $blanco
+    padding: 0.5em
+    margin-top: 0.5em
+    border-radius: 0.5em
+    width: fit-content
+
+
+//Búsqueda y añadir 
+
+
+#masCiudades
+    display: none
+    background-color: transparent
+    border: 0
+    @media screen and (max-width: $movil)
+        display: block
+
+#sumarMovil
+    margin-top: 0.3em
+    padding-left: 0.2em
+    height: 20px
+    
+
+#esconderCiudades
+    display: none
+    text-align: right
+    padding: 0.1em 0 0.5em 
+    margin-bottom: 1em
+    &:hover
+        color: black
+    @media screen and (max-width: $movil)
+        display: block
+
+.lista_ciudades
+    display: flex
+    flex-direction: column
+    padding: 0.5em 0
+
+
+.savedLocate
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1em
+    color: $negro
+    background-color: $blanco
+    margin-bottom: 0.5em
+    border-radius: 0.2em
+    padding: 0.4em 0.5em
+    text-transform: capitalize
+    display: flex
+    justify-content: space-between
+    &:hover
+        color: $blanco
+        background-color: $negro
+
+
+.buscar
+    display: flex
+    flex-direction: column
+    padding: 0.5em
+  
+#search
+    color: $negro
+    background-color: $blanco
+    margin-bottom: 0.5em
+    border-radius: 0.2em
+    padding: 0.4em 0.5em
+    border: 0
+    text-transform: capitalize
+    width: 100%
+
+.sort
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1em
+    background-color: $negro
+    color: $blanco
+    border: 0
+    padding: 0.2em 0.8em
+    border-radius: 0.5em
+   
+#lista_busqueda
+    padding-top: 1.5em
+    padding-left: 0
+
+.item_busqueda
+    padding: 0.2em 0.3em
+    text-transform: capitalize
+
+.btn_suma
+    background-color: transparent
+    border: 0
+    padding-left: 0.5em
+    @media screen and (max-width: $movil)
+        padding-left: 0.8em
+
+
+.ciudades 
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1.2em
+
+.suma_ciudad
+    font-family: Rubik
+    font-weight: normal
+    font-size: 1.2em

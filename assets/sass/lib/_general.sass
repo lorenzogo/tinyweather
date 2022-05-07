@@ -1,0 +1,158 @@
+//----ESTILOS GENERALES-----
+
+*
+    // border: 1px solid red
+
+body
+    font-size: 16px
+    background-color: $gris
+    @media screen and (max-width: $tablet)
+        font-size: 15px
+        // background-color: red
+    @media screen and (max-width: $movil)
+        // background-color: orange
+        font-size: 14px
+
+    //Etructura
+
+main
+    display: flex
+    flex-direction: column
+    margin: auto
+    padding-top: 2em
+    max-width: $desktop
+    min-width: 930px
+    @media screen and (max-width: $tablet)
+       max-width: $tablet
+       min-width: 670px
+       padding-top: 1.3em
+    @media screen and (max-width: $movil)
+        max-width: 375px
+        min-width: 300px
+        padding-top: 0
+        margin: 0
+        
+        
+
+header
+    display: block
+    padding: 1em
+    height: 70px
+    @media screen and (max-width: $tablet)
+        height: 60px
+
+    @media screen and (max-width: $movil)
+        display: none
+        
+
+.contenedor
+    display: flex
+    justify-content: space-between
+    height: 610px
+    @media screen and (max-width: $tablet)
+        height: 570px
+    @media screen and (max-width: $tablet)
+        height: 590px
+
+
+.datos_uno
+    width: 80%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 1em
+    border-color: green
+    position: relative
+    height: 100%
+    @media screen and (max-width: $tablet)
+        width: 70%
+    @media screen and (max-width: $movil)
+        width: 100%
+        padding: 0.5em 1em
+
+
+
+.d_superior
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    height: 10%
+    @media screen and (max-width: $movil)
+        padding-top: 1em
+
+.d_medio
+    display: flex
+    justify-content: center
+    flex-direction: column
+    height: auto
+    @media screen and (max-width: $movil)
+        margin-top: 2em
+
+.d_inferior
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    height: 20%
+    padding-top: 1em
+    
+
+.datos_dos
+    display: flex
+    flex-direction: column
+    justify-content: start
+    width: 30%
+    padding: 1em
+    height: 100%
+    @media screen and (max-width: $tablet)
+        width: 40%
+    @media screen and (max-width: $movil)
+        display: none
+        width: 100%
+    
+    
+//ilustración central
+
+.icono_clima
+    height: 400px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 2em
+    @media screen and (max-width: $tablet)
+        height: 380px
+
+
+//elementos inferior
+
+.actividad
+    display: flex
+    justify-content: space-between
+    width: 40%
+    padding: 0 20px
+    @media screen and (max-width: $tablet)
+        width: 60% 
+
+
+        
+
+.picto
+    height: 50px
+    width: auto
+    @media screen and (max-width: $tablet)
+        height: 40px
+    @media screen and (max-width: $movil)
+        height: 35px
+
+
+.boton_datos
+    height: 35px
+    @media screen and (max-width: $movil)
+        height: 30px
+
+
+
+.falta_icono
+    font-size: 3em
+    color: red
+    height: 500px
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Weather</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css
+    ">
+    <link rel="stylesheet" href="https://use.typekit.net/ulq1qcs.css">
+    <script src="app/main.js"></script>
+
+</head>
+<body>
+
+    <!-- principal -->
+    <main>
+        <header class="margen_A fondo radio">
+            <h1>Tiny <span class="bold">Weather</span></h1>
+        </header>
+        <div class="contenedor">      
+            <section class="datos_uno margen_A fondo radio">
+                <div>
+                    <article class="d_superior">
+                        <h2 id="city" class="bold">Ciudad</h2>
+                        <button id="masCiudades"><img id="sumarMovil" src="assets/images/ver_ciudades.svg" alt="sumar ciudad"></button>
+                        <div id="date">Fechas</div>
+                    </article>
+                    <article class="d_medio">
+                        <div id="estado_clima">Clear</div>
+                        <img id="climaToy" class="icono_clima" src="" alt="icon">
+                    </article>
+                    <article class="d_inferior">
+                        <div id="degrees">Grados</div>
+                        <div class="actividad">
+                            <img class="picto" src="" alt="bike icon">
+                            <div class="nombre_actividad">Take a bike ride</div>
+                            
+                        </div>
+                        <div class="inferior_derecha">
+                            <div id="mostrar"><img class="boton_datos" src="assets/images/mas_datos.svg"></div>
+                            <div id="datosOcultos" class="oculto">
+                                <ul class="derecha">
+                                    <li id="min" class="otros_datos">min temp 3.07 ºC</li>
+                                    <li id="max" class="otros_datos">max temp 10.01 ºC</li>
+                                    <li id="wind" class="otros_datos">wind speed 9.85 km/h</li>
+                                    <li id="hum" class="otros_datos">humidity 74%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <aside class="datos_dos margen_A fondo radio">
+
+                <div id="esconderCiudades">cerrar</div>
+                
+                <div class="ciudades">
+                    <h3>My Locations</h3>
+
+                </div>
+                <ul class="lista_ciudades">
+                    <!-- <li class="savedLocate">Madrid</li> -->
+                    <!-- Aquí pintamos las ciudades añadidas -->
+                    
+                </ul>
+
+
+                <div class="Buscar">
+                    <div>
+                        <label for="search" class="suma_ciudad">Add Locations</label>
+                        <input type="text" id="search" name="search"/>
+                        <button class="sort" data-sort="location">Find</button>
+                    </div>
+                    <ul id="lista_busqueda">
+                        <!-- Aquí aparece el resultado de la búsqueda -->
+                    </ul>
+                    
+                </div>
+            </aside>
+        </div> 
+    </main> 
+
+
+
+
+
+    
+
+</body>
+</html>
